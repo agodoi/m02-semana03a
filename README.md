@@ -79,6 +79,7 @@ f.1) **1:1 (Um para Um):**
    * **Exemplos:**
       * **CPF:** Um cliente só pode ter um CPF.
       * **Código de Produto:** Um produto só pode ter um código único.
+   * **Como modelar?** Adicione um primary key na primeira tabela e uma foreign key na segunda tabela.
   
 f.2) **1:N (Um para Muitos):**
 
@@ -86,6 +87,7 @@ f.2) **1:N (Um para Muitos):**
   * **Exemplos:**
      * **Pedidos:** Um cliente pode ter vários pedidos.
      * **Itens do Pedido:** Um pedido pode ter vários itens.
+  * **Como modelar?** Adicione um primary key na primeira tabela e várias foreign key nas demais tabelas.
      
 f.3) **N:1 (Muitos para Um):**
 
@@ -93,6 +95,7 @@ f.3) **N:1 (Muitos para Um):**
 * **Exemplos:**
     * **Categoria:** Muitos produtos pertencem a uma única categoria.
     * **Endereço:** Vários endereços pertencem a um único cliente.
+* **Como modelar?** Adicione primary key na segunda tabela e várias foreign key nas "primeiras" tabelas.
 
 f.4) **N:N (Muitos para Muitos):**
 
@@ -100,6 +103,7 @@ f.4) **N:N (Muitos para Muitos):**
 * **Exemplos:**
   * **Autores e Livros:** Vários autores podem escrever vários livros.
   * **Alunos e Turmas:** Vários alunos podem estar matriculados em várias turmas.
+* **Como modelar?** Numa terceira tabela, adicione uma foreign key da primeira e da segunda tabela.
 
 g) Para criar um **foreign key**, busque por ela no menu vertical à direita, e clique na tabela desejada que você vai criar um foreign key.
 
