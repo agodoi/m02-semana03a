@@ -141,6 +141,18 @@ Por favor, faça o clone desse repositório no seu computador e aproveite a ferr
 
 5.3) Execute o comando ```http-server``` quando aparecer o IP local **http:127.0.0.1:8080** segura o Ctrl e clique nesse link que o seu navegador preferido irá abrir e executará o SQL Designer.
 
+colocar uma imagem do SQL Designer
+
 5.4) Ao abrir o SQL Designer, já clica em **options** no menu direito vertical e mude de **mysql** para **postgresql** e mude a língua de **en** para **pt_BR** para deixar tudo em português brasileiro. O restante dos campos pode deixar como está o original.
 
+### Passo 6 - Inserindo Tabela no SQL Designer
+
+6.1) Basicamente, você vai brincar com 
+
+  * **Add table**
+  * **Edit table**
+  * **Keys**
+
+  * **Add field**
+  * **Edit field**
 
