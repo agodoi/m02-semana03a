@@ -70,6 +70,9 @@ E na mesma tela da etapa 3.4, você agora escolhe **Conecte usando host** e pree
    * Schemas
       * public
          * Tabelas (quando chegar aqui, você vai ver que está vazio, não tem nada! Normal até agora.)
+
+### Passo 3: Fazendo o C (Create) do C R U D
+
        
 2.11) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, vamos criar um pequeno script SQL que criar uma simples tabela SQL. Cole esse script lá:
 
@@ -104,5 +107,8 @@ values ('aaaa', 'bbbb', 'cccc.dddd@gmail.com', 'inteli123' );
 
 Caso tenha um erro dizendo que você já possui o users, significa que você está tentando rodar novamente o CREATE TABLE e isso não é possível. Apague ou comente as linhas do CREATE TABLE e só fique com o INSERT.
 
+2.15) Agora vem o desafio!
+
+Faça um código SQL que execute 
 
 
