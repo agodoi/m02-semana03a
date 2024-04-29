@@ -155,11 +155,54 @@ colocar uma imagem do SQL Designer
   * **Add field** --> adiciona atributos
   * **Edit field** --> edita os atributos
 
+6.2) Clique em **add table** e clique em qualquer lugar da área de desenho para a adicionar um tabela. Insira um nome em **Name** e pode até adicionar **Commnet** na sua tabela que descreve rapidamente o que ela faz. **Boas práticas: use nomes e atributos em inglês que vai facilitar no futuro. E sempre use o plural como nome da entidade. Exemplo: users, jobs, profiles, etc.**
+
+6.3) Quando você cria a tabela já entra automaticamente o **id**.
+
+6.4) Para apagar um **field**, clique nele e pressione **delete** no seu notebook.
+
+6.5) A maioria das variáveis é do tipo **Varchar** com **size 100**.
+
+6.6) Quem fica com o primary key e foreign key?
+
+a) **1:1 (Um para Um):**
+
+   * Primary Key fica na tabela principal, geralmente a que tem menos atributos, enquanto a foreign key fica na segunda tabela.
+   * **Exemplos:**
+      * **CPF:** Um cliente só pode ter um CPF.
+      * **Código de Produto:** Um produto só pode ter um código único.
+  
+2. **1:N (Um para Muitos):**
+
+  * Primary Key fica na tabela principal, foreign key fica na segunda tabela.
+  * **Exemplos:**
+     * **Pedidos:** Um cliente pode ter vários pedidos.
+     * **Itens do Pedido:** Um pedido pode ter vários itens.
+     
+4. **N:1 (Muitos para Um):**
+
+* Primary Key fica na segunda tabela com cardinalidade 1, foreign key fica na primeira tabela, com cardinalidade N.
+* **Exemplos:**
+    * **Categoria:** Muitos produtos pertencem a uma única categoria.
+    * **Endereço:** Vários endereços pertencem a um único cliente.
+
+5. **N:N (Muitos para Muitos):**
+
+* Não é possível lidar diretamente com esse tipo de relação apenas com chaves primárias e estrangeiras. Você precisará de uma terceira tabela, muitas vezes chamada de tabela de associação ou tabela intermediária.
+* **Exemplos:**
+  * **Autores e Livros:** Vários autores podem escrever vários livros.
+  * **Alunos e Turmas:** Vários alunos podem estar matriculados em várias turmas.
+
+
+
+Crie a tabela chamada **shopping_list**
+
+
 6.2) Se você clicar em **SAVE** da sua tabela, verá que tem como exportar os comandos SQL, mas terá que fazer algumas adaptações para o postgresql.
 
 ### Passo 7 - Crie um novo modelo de Banco de Dados
 
-7.1) Crie um banco de dados que tenha 2 tabelas. **Boas práticas: use nomes e atributos em inglês que vai facilitar no futuro. E sempre use o plural como nome da entidade. Exemplo: users, jobs, profiles, etc.**;
+7.1) Crie um banco de dados que tenha 2 tabelas.
 
 7.2) Crie uma chave primária e uma estrangeira e faça a relação entre elas;
 
