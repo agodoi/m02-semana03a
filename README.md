@@ -157,13 +157,13 @@ colocar uma imagem do SQL Designer
 
 6.2) Clique em **add table** e clique em qualquer lugar da área de desenho para a adicionar um tabela. Insira um nome em **Name** e pode até adicionar **Commnet** na sua tabela que descreve rapidamente o que ela faz. **Boas práticas: use nomes e atributos em inglês que vai facilitar no futuro. E sempre use o plural como nome da entidade. Exemplo: users, jobs, profiles, etc.**
 
-6.3) Quando você cria a tabela já entra automaticamente o **id**.
+6.3) Quando você cria a tabela já entra automaticamente o **id**. **TODA TABELA (ENTIDADE) TEM O SEU ID que geralmente é autoincremental.**. Então a primeira tabela será id = 1, depois a segunda tabela será id = 2
 
 6.4) Para apagar um **field**, clique nele e pressione **delete** no seu notebook.
 
 6.5) A maioria das variáveis é do tipo **Varchar** com **size 100**.
 
-6.6) Quem fica com o primary key e foreign key?
+6.6) Quem fica com o **primary key** e **foreign key**?
 
 a) **1:1 (Um para Um):**
 
@@ -188,12 +188,12 @@ c) **N:1 (Muitos para Um):**
 
 d) **N:N (Muitos para Muitos):**
 
-* Não é possível lidar diretamente com esse tipo de relação apenas com chaves primárias e estrangeiras. Você precisará de uma terceira tabela, muitas vezes chamada de tabela de associação ou tabela intermediária.
+* Não é possível resolver isso com a conexão de 2 primary key ou 2 foreign key. Você precisará de uma terceira tabela, chamada de **tabela de transição**.
 * **Exemplos:**
   * **Autores e Livros:** Vários autores podem escrever vários livros.
   * **Alunos e Turmas:** Vários alunos podem estar matriculados em várias turmas.
 
-
+6.7) Para criar um **foreign key**, clique nessa opção no menu vertical à direita, e clique na tabela desejada
 
 Crie a tabela chamada **shopping_list**
 
