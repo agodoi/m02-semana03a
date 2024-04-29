@@ -159,8 +159,8 @@ colocar uma imagem do SQL Designer
 
 ### Passo 7 - Crie um novo modelo de Banco de Dados
 
-7.1) Crie um banco de dados que tenha 2 tabelas. **Boas práticas: use nomes e atributos em inglês que vai facilitar no futuro. E sempre use o plural como nome da entidade.**;
+7.1) Crie um banco de dados que tenha 2 tabelas. **Boas práticas: use nomes e atributos em inglês que vai facilitar no futuro. E sempre use o plural como nome da entidade. Exemplo: users, jobs, profiles, etc.**;
 
 7.2) Crie uma chave primária e uma estrangeira e faça a relação entre elas;
 
-7.3) Crie esse banco de dados ou usando o Banco de dados do professor ou o seu próporio, no seu [https://dashboard.render.com](https://dashboard.render.com)
+7.3) Implemente esse novo modelo de banco de dados DBeaver. Você pode usar continuar usando o host (Render) do professor.
