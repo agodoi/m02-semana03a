@@ -118,6 +118,23 @@ Caso tenha um erro dizendo que você já possui o users, significa que você est
 
 ## Você deseja apresentar seu CRUD e tentar concorrer ao melhor CRUD da sala?
 
+### Fale com o professor que nos últimos 20min da instrução, teremos as apresentações.
+
+### Os 5 primeiros alunos inscritos concorrerão. Os 3 primeiros ganharão.
+
+Colocar o chocolate aqui
 
 
+### Passo 5 - Modelagem do seu Banco de Dados
 
+Vamos te apresentar uma ferramenta show de bola que faz modelagem de banco de dados relacional.
+
+Chama-se [SQLDesigner](https://github.com/ondras/wwwsqldesigner)
+
+Por favor, faça o clone desse repositório no seu computador e aproveite a ferramenta.
+
+5.1) Faça um clone do repositório [https://github.com/ondras/wwwsqldesigner](https://github.com/ondras/wwwsqldesigner) abrindo o seu terminal CMD na pasta que você deseja e digite ```git clone https://github.com/ondras/wwwsqldesigner```
+
+5.2) Quando terminar, entre na pasta **wwwsqldesinger** que terá sido criada dentro da pasta em que você estava no item 5.1.
+
+5.2) Digite ```npm install http-server -g``` que o npm vai fazer a instalação dos pacotes necessários para rodar no seu computador
