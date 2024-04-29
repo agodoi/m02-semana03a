@@ -13,10 +13,10 @@
 
 O famoso CRUD são as 4 operações básicas sobre bancos de dados:
 
-* Create --> criação
-* Read --> leitura
-* Update --> atualização
-* Delete --> destruição de registros de dados. 
+* Create --> cria tabela.
+* Read --> lê tributos.
+* Update --> atualiza tributos
+* Delete --> destroi registros de dados. 
 
 Nesta segunda aula sobre banco de dados, focaremos nestas instruções e na escrita de SQL para manipularmos os bancos.
 
@@ -149,10 +149,10 @@ colocar uma imagem do SQL Designer
 
 6.1) Basicamente, você vai brincar com 
 
-  * **Add table**
-  * **Edit table**
-  * **Keys**
+  * **Add table** --> adiciona tabelas
+  * **Edit table** --> edita uma tabela já existente
+  * **Keys** --> adiciona a chave primária ou estrangeira
+  * **Add field** --> adiciona atributos
+  * **Edit field** --> edita os atributos
 
-  * **Add field**
-  * **Edit field**
-
+6.2) Se você clicar em **SAVE** da sua tabela, verá que tem como exportar os comandos SQL, mas terá que fazer algumas adaptações para o postgresql.
