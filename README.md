@@ -51,30 +51,27 @@ imagem do desespero
 
 3.7) Quando acabar o download, vai dar pau na sua conexão. Isso é normal, pois só usando a URL da etapa 2.12 para puxar drivers. Vamos resolver essa falha de conexão usando outra URL.
 
-3.8) Volte no RENDER, na etapa 2.11 e copie o segundo link de conexão externa **PSQL Command Connect from the command line** e cole num arquivo TXT. Será uma coisa assim:
-PGPASSWORD=RGeW7S2AkMUEI3gZ1 psql -h dpg-cos73bflb6g-a.oregon-postgres.render.com -U bdgodoi_user bdgodoi
+3.8) Com as credenciais do banco de dados do professor:
 
-3.9) Com a URL que acabou de pegar, separe os dados **senha** que é tudo que está após **PGPASSWORD** até o primeiro espaço vazio que é o mesmo que antes de **psql**. Separe o hostname do seu computador que é tudo que está após **h** até o **.com**. Separe o usuário que está após o **-U** e o nome do banco de dados que é tudo que está no final da URL. Então você precisa de uma tabela assim:
-
-* senha: RGeW7S2AkMUEI3gZ1
-* host: dpg-cos73bflb6g-a.oregon-postgres.render.com
+* senha: ZmTVzKJXGWyB65nRGeW7S2AkMUEI3gZ1
+* host: dpg-cojpieu3e1ms73bflb6g-a.oregon-postgres.render.com
 * usuário: bdgodoi_user
 * banco de dados: bdgodoi
 
-3.10) Voltando no DBeaver, e na mesma tela da etapa 3.4, você agora escolhe **Conecte usando host** e preencha com os dados que você acabou de coletar: senha, host, usuário e banco de dados.
+E na mesma tela da etapa 3.4, você agora escolhe **Conecte usando host** e preencha com as credenciais fornecidas.
 
-3.11) Teste a conexão clicando em **Testar conexão** para mais uma vez atualizar drivers. E nessa hora, vai dar bom na sua conexão. Você pode clicar quantas vezes quiser nesse botão para testar a conexão.
+3.9) Teste a conexão clicando em **Testar conexão** para mais uma vez atualizar drivers. E nessa hora, vai dar bom na sua conexão. Você pode clicar quantas vezes quiser nesse botão para testar a conexão.
 
-3.12) Clique em **Concluir**
+3.10) Clique em **Concluir**
 
-3.13) Agora você terá o seu banco de dados no menu vertical da esquerda, no campo **Navegador banco de dados**. Expanda os objetos clicando nas setinhas que estão ao lado de cada objeto. Você tem o **Bancos de dados**, **Administrar**, **Informações do sistema**. Expanda:
+3.11) Agora você terá o seu banco de dados no menu vertical da esquerda, no campo **Navegador banco de dados**. Expanda os objetos clicando nas setinhas que estão ao lado de cada objeto. Você tem o **Bancos de dados**, **Administrar**, **Informações do sistema**. Expanda:
 
 * Bancos de dados
    * Schemas
       * public
          * Tabelas (quando chegar aqui, você vai ver que está vazio, não tem nada! Normal até agora.)
        
-3.14) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, vamos criar um pequeno script SQL que criar uma simples tabela SQL. Cole esse script lá:
+3.12) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, vamos criar um pequeno script SQL que criar uma simples tabela SQL. Cole esse script lá:
 
 ```
 create table users(
