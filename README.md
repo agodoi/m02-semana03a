@@ -172,21 +172,21 @@ a) **1:1 (Um para Um):**
       * **CPF:** Um cliente só pode ter um CPF.
       * **Código de Produto:** Um produto só pode ter um código único.
   
-2. **1:N (Um para Muitos):**
+b) **1:N (Um para Muitos):**
 
   * Primary Key fica na tabela principal, foreign key fica na segunda tabela.
   * **Exemplos:**
      * **Pedidos:** Um cliente pode ter vários pedidos.
      * **Itens do Pedido:** Um pedido pode ter vários itens.
      
-4. **N:1 (Muitos para Um):**
+c) **N:1 (Muitos para Um):**
 
 * Primary Key fica na segunda tabela com cardinalidade 1, foreign key fica na primeira tabela, com cardinalidade N.
 * **Exemplos:**
     * **Categoria:** Muitos produtos pertencem a uma única categoria.
     * **Endereço:** Vários endereços pertencem a um único cliente.
 
-5. **N:N (Muitos para Muitos):**
+d) **N:N (Muitos para Muitos):**
 
 * Não é possível lidar diretamente com esse tipo de relação apenas com chaves primárias e estrangeiras. Você precisará de uma terceira tabela, muitas vezes chamada de tabela de associação ou tabela intermediária.
 * **Exemplos:**
