@@ -137,4 +137,10 @@ Por favor, faça o clone desse repositório no seu computador e aproveite a ferr
 
 5.2) Quando terminar, entre na pasta **wwwsqldesinger** que terá sido criada dentro da pasta em que você estava no item 5.1.
 
-5.2) Digite ```npm install http-server -g``` que o npm vai fazer a instalação dos pacotes necessários para rodar no seu computador
+5.2) Digite ```npm install http-server -g``` que o npm vai fazer a instalação dos pacotes necessários para rodar no seu computador.
+
+5.3) Execute o comando ```http-server``` quando aparecer o IP local **http:127.0.0.1:8080** segura o Ctrl e clique nesse link que o seu navegador preferido irá abrir e executará o SQL Designer.
+
+5.4) Ao abrir o SQL Designer, já clica em **options** no menu direito vertical e mude de **mysql** para **postgresql** e mude a língua de **en** para **pt_BR** para deixar tudo em português brasileiro. O restante dos campos pode deixar como está o original.
+
+
