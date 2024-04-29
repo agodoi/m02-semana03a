@@ -116,6 +116,8 @@ Caso tenha um erro dizendo que você já possui o users, significa que você est
 
 4.3) Por fim, faça um SQL que execute o **Delete** e faça o teste no seu DBeaver.
 
+## Você deseja apresentar seu CRUD e tentar concorrer ao melhor CRUD da sala?
+
 
 
 
