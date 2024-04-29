@@ -32,26 +32,26 @@ imagem do desespero
 
 ### Passo 1: Abrir o DBeaver
 
-3.1) Inicialize o DBeaver. Teoricamente ele já deve ter sido instalado no autoestudos da semana 01. Mas caso esteja com defeito nele, faça:
+1.1) Inicialize o DBeaver. Teoricamente ele já deve ter sido instalado no autoestudos da semana 01. Mas caso esteja com defeito nele, faça:
 
   a) Caso não tenha instalado ou esteja com defeito, visite o site oficial do DBeaver (https://dbeaver.io/) e faça o download do instalador compatível com o seu sistema operacional (Windows, macOS ou Linux).
   b) Siga as instruções de instalação para instalar o DBeaver no seu computador.
 
 ### Passo 2: Configurar o DBeaver
 
-3.2) Vá no canto esquerdo superior e procure pelo ícone **Criar nova conexão**. É uma tomada azul com o sinal de +.
+2.2) Vá no canto esquerdo superior e procure pelo ícone **Criar nova conexão**. É uma tomada azul com o sinal de +.
 
-3.3) Escolha o **PostgreeSQL** e clique em **Avançar**.
+2.3) Escolha o **PostgreeSQL** e clique em **Avançar**.
 
-3.4) Em **Servidor**, escolha o **Conecte usando URL** e cole aquele link da etapa 2.12
+2.4) Em **Servidor**, escolha o **Conecte usando URL** e cole aquele link da etapa 2.12
 
-3.5) Clique no botão **Testar conexão** para instalar drivers de primeira rodada. Esse botão **Testar conexão** está na parte inferior da atual tela.
+2.5) Clique no botão **Testar conexão** para instalar drivers de primeira rodada. Esse botão **Testar conexão** está na parte inferior da atual tela.
 
-3.6) Vai aparecer uma tela solicitando **download**. Confirme o download, pois vão vir drivers novos. 
+2.6) Vai aparecer uma tela solicitando **download**. Confirme o download, pois vão vir drivers novos. 
 
-3.7) Quando acabar o download, vai dar pau na sua conexão. Isso é normal, pois só usando a URL da etapa 2.12 para puxar drivers. Vamos resolver essa falha de conexão usando outra URL.
+2.7) Quando acabar o download, vai dar pau na sua conexão. Isso é normal, pois só usando a URL da etapa 2.12 para puxar drivers. Vamos resolver essa falha de conexão usando outra URL.
 
-3.8) Com as credenciais do banco de dados do professor:
+2.8) Com as credenciais do banco de dados do professor:
 
 * senha: ZmTVzKJXGWyB65nRGeW7S2AkMUEI3gZ1
 * host: dpg-cojpieu3e1ms73bflb6g-a.oregon-postgres.render.com
@@ -60,18 +60,18 @@ imagem do desespero
 
 E na mesma tela da etapa 3.4, você agora escolhe **Conecte usando host** e preencha com as credenciais fornecidas.
 
-3.9) Teste a conexão clicando em **Testar conexão** para mais uma vez atualizar drivers. E nessa hora, vai dar bom na sua conexão. Você pode clicar quantas vezes quiser nesse botão para testar a conexão.
+2.9) Teste a conexão clicando em **Testar conexão** para mais uma vez atualizar drivers. E nessa hora, vai dar bom na sua conexão. Você pode clicar quantas vezes quiser nesse botão para testar a conexão.
 
-3.10) Clique em **Concluir**
+2.10) Clique em **Concluir**
 
-3.11) Agora você terá o seu banco de dados no menu vertical da esquerda, no campo **Navegador banco de dados**. Expanda os objetos clicando nas setinhas que estão ao lado de cada objeto. Você tem o **Bancos de dados**, **Administrar**, **Informações do sistema**. Expanda:
+2.11) Agora você terá o seu banco de dados no menu vertical da esquerda, no campo **Navegador banco de dados**. Expanda os objetos clicando nas setinhas que estão ao lado de cada objeto. Você tem o **Bancos de dados**, **Administrar**, **Informações do sistema**. Expanda:
 
 * Bancos de dados
    * Schemas
       * public
          * Tabelas (quando chegar aqui, você vai ver que está vazio, não tem nada! Normal até agora.)
        
-3.12) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, vamos criar um pequeno script SQL que criar uma simples tabela SQL. Cole esse script lá:
+2.12) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, vamos criar um pequeno script SQL que criar uma simples tabela SQL. Cole esse script lá:
 
 ```
 create table users(
