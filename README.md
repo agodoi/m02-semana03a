@@ -156,3 +156,11 @@ colocar uma imagem do SQL Designer
   * **Edit field** --> edita os atributos
 
 6.2) Se você clicar em **SAVE** da sua tabela, verá que tem como exportar os comandos SQL, mas terá que fazer algumas adaptações para o postgresql.
+
+### Passo 7 - Crie um novo modelo de Banco de Dados
+
+7.1) Crie um banco de dados que tenha 2 tabelas;
+
+7.2) Crie uma chave primária e uma estrangeira e faça a relação entre elas;
+
+7.3) Crie esse banco de dados ou usando o Banco de dados do professor ou o seu próporio, no seu [https://dashboard.render.com](https://dashboard.render.com)
