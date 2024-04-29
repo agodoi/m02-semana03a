@@ -39,19 +39,19 @@ imagem do desespero
 
 ### Passo 2: Configurar o DBeaver
 
-2.2) Vá no canto esquerdo superior e procure pelo ícone **Criar nova conexão**. É uma tomada azul com o sinal de +.
+2.1) Vá no canto esquerdo superior e procure pelo ícone **Criar nova conexão**. É uma tomada azul com o sinal de +.
 
-2.3) Escolha o **PostgreeSQL** e clique em **Avançar**.
+2.2) Escolha o **PostgreeSQL** e clique em **Avançar**.
 
-2.4) Em **Servidor**, escolha o **Conecte usando URL** e cole aquele link da etapa 2.12
+2.3) Em **Servidor**, escolha o **Conecte usando URL** e cole aquele link da etapa 2.12
 
-2.5) Clique no botão **Testar conexão** para instalar drivers de primeira rodada. Esse botão **Testar conexão** está na parte inferior da atual tela.
+2.4) Clique no botão **Testar conexão** para instalar drivers de primeira rodada. Esse botão **Testar conexão** está na parte inferior da atual tela.
 
-2.6) Vai aparecer uma tela solicitando **download**. Confirme o download, pois vão vir drivers novos. 
+2.5) Vai aparecer uma tela solicitando **download**. Confirme o download, pois vão vir drivers novos. 
 
-2.7) Quando acabar o download, vai dar pau na sua conexão. Isso é normal, pois só usando a URL da etapa 2.12 para puxar drivers. Vamos resolver essa falha de conexão usando outra URL.
+2.6) Quando acabar o download, vai dar pau na sua conexão. Isso é normal, pois só usando a URL da etapa 2.12 para puxar drivers. Vamos resolver essa falha de conexão usando outra URL.
 
-2.8) Com as credenciais do banco de dados do professor:
+2.7) Com as credenciais do banco de dados do professor:
 
 * senha: ZmTVzKJXGWyB65nRGeW7S2AkMUEI3gZ1
 * host: dpg-cojpieu3e1ms73bflb6g-a.oregon-postgres.render.com
@@ -60,18 +60,18 @@ imagem do desespero
 
 E na mesma tela da etapa 3.4, você agora escolhe **Conecte usando host** e preencha com as credenciais fornecidas.
 
-2.9) Teste a conexão clicando em **Testar conexão** para mais uma vez atualizar drivers. E nessa hora, vai dar bom na sua conexão. Você pode clicar quantas vezes quiser nesse botão para testar a conexão.
+2.8) Teste a conexão clicando em **Testar conexão** para mais uma vez atualizar drivers. E nessa hora, vai dar bom na sua conexão. Você pode clicar quantas vezes quiser nesse botão para testar a conexão.
 
-2.10) Clique em **Concluir**
+2.9) Clique em **Concluir**
 
-2.11) Agora você terá o seu banco de dados no menu vertical da esquerda, no campo **Navegador banco de dados**. Expanda os objetos clicando nas setinhas que estão ao lado de cada objeto. Você tem o **Bancos de dados**, **Administrar**, **Informações do sistema**. Expanda:
+2.10) Agora você terá o seu banco de dados no menu vertical da esquerda, no campo **Navegador banco de dados**. Expanda os objetos clicando nas setinhas que estão ao lado de cada objeto. Você tem o **Bancos de dados**, **Administrar**, **Informações do sistema**. Expanda:
 
 * Bancos de dados
    * Schemas
       * public
          * Tabelas (quando chegar aqui, você vai ver que está vazio, não tem nada! Normal até agora.)
        
-2.12) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, vamos criar um pequeno script SQL que criar uma simples tabela SQL. Cole esse script lá:
+2.11) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, vamos criar um pequeno script SQL que criar uma simples tabela SQL. Cole esse script lá:
 
 ```
 create table users(
@@ -85,18 +85,22 @@ update_at TIMESTAMP default NOW()
 );
 ```
 
-3.15) Para rodar esse script, clique num **play laranja** minúsculo que tem logo na primeira linha do **create**. O resultado será uma tabela criada na parte de baixo da sua tela. Caso apareça algum erro, corrija no código-fonte da etapa 3.14.
+2.12) Para rodar esse script, clique num **play laranja** minúsculo que tem logo na primeira linha do **create**. O resultado será uma tabela criada na parte de baixo da sua tela. **Caso apareça algum erro, o que será que você terá que mudar no código da etapa 2.11? Pense e fale para o professor ou para os seus colegas!!!**
 
-3.16) Clique com o botão direito em **Tabelas** da etapa 3.13 e selecione **atualizar** e daí vai aparecer a tabela **users** que você acabou de criar. E dando 2 cliques na tabela **users**, você vai ver sua primeira tabela criada, seu primeiro banco de dados !!!! Chic! Vai estar tudo vazio, sim! Mas está criada.
+Agora, dá uma paradinha e comente todas as linhas do código-fonte acima para que você possa tirar proveito disso num outro dia. Use esse forms para enviar seu comentário.
 
-3.17) Vamos dar um **INSERT** na sua tabela, que significa, entrar com dados novos. Para isso, volte no **Script SQL** da etapa 3.14, dê um enter no final da última linha e adicione essas novas linhas
+[Google Forms Preencha Aqui](https://docs.google.com/forms/d/e/1FAIpQLSfF5jHRCI_NoYLK8RiTBpbz3RLyTtnJ5E-uU9QxqmRILSCdaQ/viewform)
+
+2.13) Clique com o botão direito em **Tabelas** da etapa 2.10 e selecione **atualizar** e daí vai aparecer a tabela **users** que você acabou de criar. E dando 2 cliques na tabela **users**, você vai ver sua primeira tabela criada, seu primeiro banco de dados !!!! Chic! Vai estar tudo vazio, sim! Mas está criada.
+
+2.14) Vamos dar um **INSERT** na sua tabela, que significa, entrar com dados novos. Para isso, volte no **Script SQL** da etapa 3.14, dê um enter no final da última linha e adicione essas novas linhas
 
 ```
 insert into users (primeiro_nome, ultimo_nome, email, senha)
 values ('Fusca', 'Herbie', 'fusca.herbie@gmail.com', 'inteli123' );
 ```
 
-Caso tenha um erro dizendo que você já possui o users, significa que você está tentando rodar novamente o CREATE TABLE e isso não é possível. Apague as linhas do CREATE TABLE e só fique com o INSERT.
+Caso tenha um erro dizendo que você já possui o users, significa que você está tentando rodar novamente o CREATE TABLE e isso não é possível. Apague ou comente as linhas do CREATE TABLE e só fique com o INSERT.
 
 
 
