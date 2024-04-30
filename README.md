@@ -50,10 +50,10 @@ c) Digite ```npm install http-server -g``` que o npm vai fazer a instalação do
 
 d) Execute o comando ```http-server``` quando aparecer o IP local **http:127.0.0.1:8080** segura o Ctrl e clique nesse link que o seu navegador preferido irá abrir e executará o SQL Designer.
 
-
-
-
-
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m02-semana03a/blob/main/imgs/sqldesigner.png">
+   <img alt="Desespero" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m02-semana03a/blob/main/imgs/sqldesigner.png)">
+</picture>
 
 
 
@@ -176,7 +176,7 @@ k) Agora você terá o seu banco de dados no menu vertical da esquerda, no campo
 ## Passo 5: Fazendo o C (Create) do C R U D
 
        
-a) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, copie e cole o seu SQL do SQLDesigner. Aglr
+a) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, copie e cole o seu SQL do SQLDesigner. Um Exemplo seria isso:
 
 ```
 create table users(
@@ -224,6 +224,12 @@ c) Por fim, faça um SQL que execute o **Delete** e faça o teste no seu DBeaver
 
 ### Os 5 primeiros alunos inscritos concorrerão. Os 3 primeiros ganharão.
 
-Colocar o chocolate aqui
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m02-semana03a/blob/main/imgs/bisps__98269.jpg">
+   <img alt="Bis" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m02-semana03a/blob/main/imgs/bisps__98269.jpg)">
+</picture>
+
+
 
 
