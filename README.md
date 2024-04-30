@@ -121,9 +121,16 @@ d) Para apagar um **field**, clique nele e pressione **delete** no seu notebook.
 
 e) A maioria das variáveis é do tipo **Varchar** com **size 100**.
 
-f) Quem fica com o **primary key** e **foreign key**?
+f) Para criar um **foreign key**, busque por ela no menu vertical à direita, e clique na tabela desejada que você vai criar um foreign key.
 
-f.1) **1:1 (Um para Um):**
+g) Se você clicar em **SAVE** da sua tabela, verá que tem como exportar os comandos SQL. Basta selecionar o PostgreSQL e clicar no botão vermelho **Generate MySQL**.
+
+
+### Conceito
+
+Quem fica com o **primary key** e **foreign key**?
+
+a) **1:1 (Um para Um):**
 
    * Primary Key fica na tabela principal, geralmente a que tem menos atributos, enquanto a foreign key fica na segunda tabela.
    * **Exemplos:**
@@ -131,7 +138,7 @@ f.1) **1:1 (Um para Um):**
       * **Código de Produto:** Um produto só pode ter um código único.
    * **Como modelar?** Adicione um primary key na primeira tabela e uma foreign key na segunda tabela.
   
-f.2) **1:N (Um para Muitos):**
+b) **1:N (Um para Muitos):**
 
   * Primary Key fica na tabela principal, foreign key fica na segunda tabela.
   * **Exemplos:**
@@ -139,7 +146,7 @@ f.2) **1:N (Um para Muitos):**
      * **Itens do Pedido:** Um pedido pode ter vários itens.
   * **Como modelar?** Adicione um primary key na primeira tabela e várias foreign key nas demais tabelas.
      
-f.3) **N:1 (Muitos para Um):**
+c) **N:1 (Muitos para Um):**
 
 * Primary Key fica na segunda tabela com cardinalidade 1, foreign key fica na primeira tabela, com cardinalidade N.
 * **Exemplos:**
@@ -149,7 +156,7 @@ f.3) **N:1 (Muitos para Um):**
 
 Então, **1:N** = **N:1**
 
-f.4) **N:N (Muitos para Muitos):**
+d) **N:N (Muitos para Muitos):**
 
 * Não é possível resolver isso com a conexão de 2 primary key ou 2 foreign key entre elas. Você precisará de uma terceira tabela, chamada de **tabela de transição**.
 * **Exemplos:**
@@ -157,9 +164,6 @@ f.4) **N:N (Muitos para Muitos):**
   * **Alunos e Turmas:** Vários alunos podem estar matriculados em várias turmas.
 * **Como modelar?** Numa terceira tabela, adicione uma foreign key da primeira e da segunda tabela.
 
-g) Para criar um **foreign key**, busque por ela no menu vertical à direita, e clique na tabela desejada que você vai criar um foreign key.
-
-h) Se você clicar em **SAVE** da sua tabela, verá que tem como exportar os comandos SQL. Basta selecionar o PostgreSQL e clicar no botão vermelho **Generate MySQL**.
 
 ## Passo 3 - Sua vez! Crie um Banco de Dados
 
