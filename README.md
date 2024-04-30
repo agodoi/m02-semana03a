@@ -28,29 +28,33 @@ Nesta segunda aula sobre banco de dados, focaremos nestas instruções e na escr
 * INSERT: Quando você deseja adicionar novos itens (registros) à sua caixa de armazenamento de dados, você usa o comando INSERT. É como colocar um novo item em uma das divisórias. Você especifica em qual divisória (tabela) deseja adicionar o item e fornece os valores para todas as colunas relevantes.
 
 ```
-INSERT INTO clientes (nome, idade, email)
-VALUES ('João', 30, 'joao@example.com');
+-- Exemplo de comando INSERT para adicionar um novo registro à tabela "clientes"
+INSERT INTO clientes (nome, email, idade) VALUES ('João', 'joao@email.com', 30);
+-- Neste exemplo, estamos adicionando um novo cliente com nome 'João', e-mail 'joao@email.com' e idade 30 à tabela "clientes".
 ```
 
 * SELECT: Às vezes, você quer ver o que está dentro das suas divisórias sem fazer nenhuma alteração. O comando SELECT é usado para isso. Você pode usar o SELECT para recuperar (selecionar) os dados que deseja ver. Por exemplo, você pode recuperar todos os itens de uma divisória específica ou apenas os itens que atendem a certos critérios.
 
 ```
+-- Exemplo de comando SELECT para recuperar todos os registros da tabela "clientes"
 SELECT * FROM clientes;
+-- Este comando retorna todos os registros (linhas) da tabela "clientes" juntamente com todas as colunas (nome, email, idade).
 ```
 
 * UPDATE: Se você precisar modificar um item que já está na sua caixa de armazenamento de dados, o comando UPDATE é o que você usa. É como mudar o valor de um item que já está dentro de uma das divisórias. Você especifica qual item deseja atualizar e fornece os novos valores para as colunas relevantes.
 
 ```
-UPDATE clientes
-SET idade = 35
-WHERE nome = 'João';
+-- Exemplo de comando UPDATE para modificar o e-mail de um cliente na tabela "clientes"
+UPDATE clientes SET email = 'novo_email@email.com' WHERE nome = 'João';
+-- Neste exemplo, estamos atualizando o e-mail do cliente com nome 'João' para 'novo_email@email.com'.
 ```
 
 * DELETE: Se você quiser remover um item da sua caixa de armazenamento de dados, o comando DELETE é o que você usa. É como tirar um item de uma das divisórias. Você especifica qual item deseja excluir e ele desaparece da sua caixa de armazenamento.
 
 ```
-DELETE FROM clientes
-WHERE nome = 'João';
+-- Exemplo de comando DELETE para remover um cliente da tabela "clientes"
+DELETE FROM clientes WHERE nome = 'João';
+-- Este comando remove o cliente com nome 'João' da tabela "clientes".
 ```
 
 ### DDL -  Data Definition Language
