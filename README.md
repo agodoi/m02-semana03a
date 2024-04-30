@@ -268,10 +268,9 @@ c) Por fim, faça um SQL que execute o **Delete** e faça o teste no seu DBeaver
 
 ## Você deseja apresentar seu CRUD e tentar concorrer ao melhor CRUD da sala?
 
-### Fale com o professor que nos últimos 20min da instrução, teremos as apresentações.
+### Fale com o professor que nos últimos 20min do fechamento, teremos as apresentações.
 
-### Os 5 primeiros alunos inscritos concorrerão. Os 3 primeiros ganharão.
-
+### Os 3 primeiros alunos inscritos concorrerão. O primeiro leva uma caixa de Bis.
 
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m02-semana03a/blob/main/imgs/bisps__98269.jpg">
