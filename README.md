@@ -33,7 +33,7 @@ imagem do desespero
 
 
 
-## Passo 1 - Modelagem do seu Banco de Dados
+## Passo 1 - Instalando uma ferramenta de modelagem de banco de dados
 
 Vamos te apresentar uma ferramenta show de bola que faz modelagem de banco de dados relacional.
 
@@ -53,7 +53,7 @@ colocar uma imagem do SQL Designer
 
 d) Ao abrir o SQL Designer, já clica em **options** no menu direito vertical e mude de **mysql** para **postgresql** e mude a língua de **en** para **pt_BR** para deixar tudo em português brasileiro. O restante dos campos pode deixar como está o original.
 
-## Passo 2 - Inserindo Tabela no SQL Designer
+## Passo 2 - Modelando um Banco de Dados
 
 a) Basicamente, você vai brincar com 
 
@@ -107,10 +107,9 @@ f.4) **N:N (Muitos para Muitos):**
 
 g) Para criar um **foreign key**, busque por ela no menu vertical à direita, e clique na tabela desejada que você vai criar um foreign key.
 
-
 i) Se você clicar em **SAVE** da sua tabela, verá que tem como exportar os comandos SQL. Basta selecionar o PostgreSQL e clicar no botão vermelho **Generate MySQL**.
 
-## Passo 3 - Crie um novo modelo de Banco de Dados
+## Passo 3 - Sua vez!n Crie um Banco de Dados
 
 a) Modele um banco de dados
 
@@ -126,28 +125,27 @@ d) Implemente esse novo modelo de banco de dados DBeaver. Você pode usar o host
 e) Só tenha cuidado para os nomes das entidades para não coincidir com o colega, pois caso contrário, vai dar B.O. no ```CREATE TABLE```.
 
 
-## Passo 4: Abrir o DBeaver
+## Passo 4: Implemente seu Banco de Dados no DBeaver
 
 a) Inicialize o DBeaver. Teoricamente ele já deve ter sido instalado no autoestudos da semana 01. Mas caso esteja com defeito nele, faça:
 
   a.1) Caso não tenha instalado ou esteja com defeito, visite o site oficial do DBeaver (https://dbeaver.io/) e faça o download do instalador compatível com o seu sistema operacional (Windows, macOS ou Linux).
   a.2) Siga as instruções de instalação para instalar o DBeaver no seu computador.
 
-## Passo 5: Configurar o DBeaver
 
-a) Vá no canto esquerdo superior e procure pelo ícone **Criar nova conexão**. É uma tomada azul com o sinal de +.
+b) Vá no canto esquerdo superior e procure pelo ícone **Criar nova conexão**. É uma tomada azul com o sinal de +.
 
-b) Escolha o **PostgreeSQL** e clique em **Avançar**.
+c) Escolha o **PostgreeSQL** e clique em **Avançar**.
 
-c) Em **Servidor**, escolha o **Conecte usando URL** e cole aquele link da etapa **2.12**
+d) Em **Servidor**, escolha o **Conecte usando URL** e cole aquele link da etapa **2.12**
 
-d) Clique no botão **Testar conexão** para instalar drivers de primeira rodada. Esse botão **Testar conexão** está na parte inferior da atual tela.
+e) Clique no botão **Testar conexão** para instalar drivers de primeira rodada. Esse botão **Testar conexão** está na parte inferior da atual tela.
 
-e) Vai aparecer uma tela solicitando **download**. Confirme o download, pois vão vir drivers novos. 
+f) Vai aparecer uma tela solicitando **download**. Confirme o download, pois vão vir drivers novos. 
 
-f) Quando acabar o download, vai dar pau na sua conexão. Isso é normal, pois só usando a URL da etapa **2.12** para puxar drivers. Vamos resolver essa falha de conexão usando outra URL.
+g) Quando acabar o download, vai dar pau na sua conexão. Isso é normal, pois só usando a URL da etapa **2.12** para puxar drivers. Vamos resolver essa falha de conexão usando outra URL.
 
-g) Com as credenciais do banco de dados do professor:
+h) Com as credenciais do banco de dados do professor:
 
 * senha: ZmTVzKJXGWyB65nRGeW7S2AkMUEI3gZ1
 * host: dpg-cojpieu3e1ms73bflb6g-a.oregon-postgres.render.com
@@ -156,18 +154,18 @@ g) Com as credenciais do banco de dados do professor:
 
 E na mesma tela da etapa 3.4, você agora escolhe **Conecte usando host** e preencha com as credenciais fornecidas.
 
-h) Teste a conexão clicando em **Testar conexão** para mais uma vez atualizar drivers. E nessa hora, vai dar bom na sua conexão. Você pode clicar quantas vezes quiser nesse botão para testar a conexão.
+i) Teste a conexão clicando em **Testar conexão** para mais uma vez atualizar drivers. E nessa hora, vai dar bom na sua conexão. Você pode clicar quantas vezes quiser nesse botão para testar a conexão.
 
-i) Clique em **Concluir**
+j) Clique em **Concluir**
 
-j) Agora você terá o seu banco de dados no menu vertical da esquerda, no campo **Navegador banco de dados**. Expanda os objetos clicando nas setinhas que estão ao lado de cada objeto. Você tem o **Bancos de dados**, **Administrar**, **Informações do sistema**. Expanda:
+k) Agora você terá o seu banco de dados no menu vertical da esquerda, no campo **Navegador banco de dados**. Expanda os objetos clicando nas setinhas que estão ao lado de cada objeto. Você tem o **Bancos de dados**, **Administrar**, **Informações do sistema**. Expanda:
 
 * Bancos de dados
    * Schemas
       * public
          * Tabelas (quando chegar aqui, você vai ver que está vazio, não tem nada! Normal até agora.)
 
-## Passo 6: Fazendo o C (Create) do C R U D
+## Passo 5: Fazendo o C (Create) do C R U D
 
        
 a) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, copie e cole o seu SQL do SQLDesigner. Aglr
@@ -204,7 +202,7 @@ values ('aaaa', 'bbbb', 'cccc.dddd@gmail.com', 'inteli123' );
 Caso tenha um erro dizendo que você já possui o users, significa que você está tentando rodar novamente o CREATE TABLE e isso não é possível. Apague ou comente as linhas do CREATE TABLE e só fique com o INSERT.
 
 
-## Passo 7 - Implementar R U D do CRUD
+## Passo 6 - Implementar R U D do CRUD
 
 a) Agora vem o desafio! Faça um código SQL que execute o **Read** no banco de dados do professor e faça o teste no seu DBeaver.
 
