@@ -107,19 +107,23 @@ f.4) **N:N (Muitos para Muitos):**
 
 g) Para criar um **foreign key**, busque por ela no menu vertical à direita, e clique na tabela desejada que você vai criar um foreign key.
 
-Crie a tabela chamada **shopping_list**
 
-
-6.2) Se você clicar em **SAVE** da sua tabela, verá que tem como exportar os comandos SQL, mas terá que fazer algumas adaptações para o postgresql.
+i) Se você clicar em **SAVE** da sua tabela, verá que tem como exportar os comandos SQL. Basta selecionar o PostgreSQL e clicar no botão vermelho **Generate MySQL**.
 
 ## Passo 3 - Crie um novo modelo de Banco de Dados
 
-a) Crie um banco de dados que tenha 2 tabelas.
+a) Modele um banco de dados
 
-b) Crie uma chave primária e uma estrangeira e faça a relação entre elas;
+* 1:1 --> tabela 1 e tabela 2
+* N:N --> tabela 1 relaciona com tabela 3, mas você vai precisar criar a tabela 4, porque tabela 1 (N) e tabela 3 (N) só se relacionam através de uma tabela de transição, lembra?  
 
-c) Implemente esse novo modelo de banco de dados DBeaver. Você pode usar continuar usando o host (Render) do professor.
+b) Crie uma chave primária para Tabela 1 e uma estrangeira para Tabela 2 e faça a relação entre elas;
 
+c) Na tabela 4, crie uma chave estrangeira para Tabela 1 e Tabela 3 e faça as conexões.
+
+d) Implemente esse novo modelo de banco de dados DBeaver. Você pode usar o host (Render) do professor.
+
+e) Só tenha cuidado para os nomes das entidades para não coincidir com o colega, pois caso contrário, vai dar B.O. no ```CREATE TABLE```.
 
 
 ## Passo 4: Abrir o DBeaver
@@ -166,7 +170,7 @@ j) Agora você terá o seu banco de dados no menu vertical da esquerda, no campo
 ## Passo 6: Fazendo o C (Create) do C R U D
 
        
-a) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, vamos criar um pequeno script SQL que criar uma simples tabela SQL. Cole esse script lá:
+a) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, copie e cole o seu SQL do SQLDesigner. Aglr
 
 ```
 create table users(
