@@ -27,10 +27,10 @@ Nesta segunda aula sobre banco de dados, focaremos nestas instruções e na escr
 
 * INSERT: Quando você deseja adicionar novos itens (registros) à sua caixa de armazenamento de dados, você usa o comando INSERT. É como colocar um novo item em uma das divisórias. Você especifica em qual divisória (tabela) deseja adicionar o item e fornece os valores para todas as colunas relevantes.
 
-  ```
+```
 INSERT INTO clientes (nome, idade, email)
 VALUES ('João', 30, 'joao@example.com');
-  ```
+```
 
 * SELECT: Às vezes, você quer ver o que está dentro das suas divisórias sem fazer nenhuma alteração. O comando SELECT é usado para isso. Você pode usar o SELECT para recuperar (selecionar) os dados que deseja ver. Por exemplo, você pode recuperar todos os itens de uma divisória específica ou apenas os itens que atendem a certos critérios.
 
