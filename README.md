@@ -135,7 +135,7 @@ f) Para criar um **foreign key**, clique sobre o **primary key** (atributo **id*
 </picture>
 
 
-g) Se você clicar em **SAVE** da sua tabela, verá que tem como exportar os comandos SQL. Basta selecionar o PostgreSQL e clicar no botão vermelho **Generate MySQL**.
+g) Se você clicar em **SAVE** da sua tabela, verá que tem como exportar os comandos SQL, mas cuidado, ele exporta como MySQL.
 
 
 ### Conceito
@@ -210,28 +210,20 @@ b) Vá no canto esquerdo superior e procure pelo ícone **Criar nova conexão**.
 
 c) Escolha o **PostgreeSQL** e clique em **Avançar**.
 
-d) Em **Servidor**, escolha o **Conecte usando URL** e cole aquele link da etapa **2.12**
+d) Na aba **Principal**, em **Servidor**, escolha **Conecte usando Host** e cole as seguintes informações:
 
-e) Clique no botão **Testar conexão** para instalar drivers de primeira rodada. Esse botão **Testar conexão** está na parte inferior da atual tela.
-
-f) Vai aparecer uma tela solicitando **download**. Confirme o download, pois vão vir drivers novos. 
-
-g) Quando acabar o download, vai dar pau na sua conexão. Isso é normal, pois só usando a URL da etapa **2.12** para puxar drivers. Vamos resolver essa falha de conexão usando outra URL.
-
-h) Com as credenciais do banco de dados do professor:
-
-* senha: ZmTVzKJXGWyB65nRGeW7S2AkMUEI3gZ1
 * host: dpg-cojpieu3e1ms73bflb6g-a.oregon-postgres.render.com
-* usuário: bdgodoi_user
 * banco de dados: bdgodoi
+* nome de usuário: bdgodoi_user
+* senha: ZmTVzKJXGWyB65nRGeW7S2AkMUEI3gZ1
 
-E na mesma tela da etapa 3.4, você agora escolhe **Conecte usando host** e preencha com as credenciais fornecidas.
+e) Clique no botão **Testar conexão** para instalar drivers de primeira rodada e testar sua conexão com o Render. Esse botão **Testar conexão** está na parte inferior da atual tela.
 
-i) Teste a conexão clicando em **Testar conexão** para mais uma vez atualizar drivers. E nessa hora, vai dar bom na sua conexão. Você pode clicar quantas vezes quiser nesse botão para testar a conexão.
+f) Caso apareça uma tela solicitando **download**. Confirme o download, pois vão vir drivers novos. 
 
-j) Clique em **Concluir**
+g) Clique em **Concluir**
 
-k) Agora você terá o seu banco de dados no menu vertical da esquerda, no campo **Navegador banco de dados**. Expanda os objetos clicando nas setinhas que estão ao lado de cada objeto. Você tem o **Bancos de dados**, **Administrar**, **Informações do sistema**. Expanda:
+h) Agora você terá o banco de dados do professor no menu vertical da esquerda, no campo **Navegador banco de dados**. Expanda os objetos clicando nas setinhas que estão ao lado de cada objeto. Você tem o **Bancos de dados**, **Administrar**, **Informações do sistema**. Expanda:
 
 * Bancos de dados
    * Schemas
@@ -242,6 +234,29 @@ k) Agora você terá o seu banco de dados no menu vertical da esquerda, no campo
 
        
 a) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, copie e cole o seu SQL do SQLDesigner. Você pode usar os exemplos dados no início dessa material.
+
+```
+-- Drop table 'addresses' if it exists
+DROP TABLE IF EXISTS addresses;
+
+-- Drop table 'users' if it exists
+DROP TABLE IF EXISTS users;
+
+-- Create table 'users'
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  first_name VARCHAR(100),
+  last_name VARCHAR(100),
+  cpf BIGINT
+);
+
+-- Create table 'addresses'
+CREATE TABLE addresses (
+  id SERIAL PRIMARY KEY,
+  cpf_users BIGINT REFERENCES users(id)
+);
+
+```
 
 
 b) Para rodar esse script, clique num **play laranja** minúsculo que tem logo na primeira linha do **create**. O resultado será uma tabela criada na parte de baixo da sua tela. **Caso apareça algum erro, o que será que você terá que mudar no código da etapa 3.1? Pense e fale para o professor ou para os seus colegas!!!**
