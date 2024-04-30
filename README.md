@@ -28,6 +28,11 @@ Vamos manipular um banco de dados comum entre todos e aplicar o CRUD nele.
 Será o banco de dados do professor.
 
 
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m02-semana02/blob/main/imgs/modelagens.png">
+   <img alt="Tipo de Modelagens" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m02-semana02/blob/main/imgs/modelagens.png)">
+</picture>
+
 imagem do desespero
 
 
@@ -95,7 +100,9 @@ f.3) **N:1 (Muitos para Um):**
 * **Exemplos:**
     * **Categoria:** Muitos produtos pertencem a uma única categoria.
     * **Endereço:** Vários endereços pertencem a um único cliente.
-* **Como modelar?** Adicione primary key na segunda tabela e várias foreign key nas "primeiras" tabelas.
+* **Como modelar?** Adicione primary key na segunda tabela e várias foreign key nas "primeiras" tabelas. Em resumo, fica igual ao caso de 1:N.
+
+Então, **1:N** = **N:1**
 
 f.4) **N:N (Muitos para Muitos):**
 
