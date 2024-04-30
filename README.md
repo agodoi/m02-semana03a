@@ -100,6 +100,8 @@ d) Execute o comando ```http-server``` quando aparecer o IP local **http:127.0.0
 </picture>
 
 
+**se deu tudo errado, use esse link [https://sql.toad.cz/] (https://sql.toad.cz/)**
+
 
 d) Ao abrir o SQL Designer, já clica em **options** no menu direito vertical e mude de **mysql** para **postgresql** e mude a língua de **en** para **pt_BR** para deixar tudo em português brasileiro. O restante dos campos pode deixar como está o original.
 
