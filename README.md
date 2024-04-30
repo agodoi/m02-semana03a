@@ -21,6 +21,46 @@ O famoso CRUD são as 4 operações básicas sobre bancos de dados:
 Nesta segunda aula sobre banco de dados, focaremos nestas instruções e na escrita de SQL para manipularmos os bancos.
 
 
+## Conceitos do Dia
+
+### DML - Data Manipulation Language
+
+* INSERT: Quando você deseja adicionar novos itens (registros) à sua caixa de armazenamento de dados, você usa o comando INSERT. É como colocar um novo item em uma das divisórias. Você especifica em qual divisória (tabela) deseja adicionar o item e fornece os valores para todas as colunas relevantes.
+
+  ```
+INSERT INTO clientes (nome, idade, email)
+VALUES ('João', 30, 'joao@example.com');
+  ```
+
+* SELECT: Às vezes, você quer ver o que está dentro das suas divisórias sem fazer nenhuma alteração. O comando SELECT é usado para isso. Você pode usar o SELECT para recuperar (selecionar) os dados que deseja ver. Por exemplo, você pode recuperar todos os itens de uma divisória específica ou apenas os itens que atendem a certos critérios.
+
+```
+SELECT * FROM clientes;
+```
+
+* UPDATE: Se você precisar modificar um item que já está na sua caixa de armazenamento de dados, o comando UPDATE é o que você usa. É como mudar o valor de um item que já está dentro de uma das divisórias. Você especifica qual item deseja atualizar e fornece os novos valores para as colunas relevantes.
+
+```
+UPDATE clientes
+SET idade = 35
+WHERE nome = 'João';
+```
+
+* DELETE: Se você quiser remover um item da sua caixa de armazenamento de dados, o comando DELETE é o que você usa. É como tirar um item de uma das divisórias. Você especifica qual item deseja excluir e ele desaparece da sua caixa de armazenamento.
+
+```
+DELETE FROM clientes
+WHERE nome = 'João';
+```
+
+### DDL -  Data Definition Language
+
+* CREATE: Este comando é usado para criar novas divisórias (tabelas), especificando o nome da tabela e os atributos que cada divisória terá. Por exemplo, se você quiser criar uma divisória para armazenar informações sobre clientes, usaria o comando CREATE TABLE.
+
+* ALTER: Às vezes, você precisa fazer ajustes na estrutura da sua caixa de armazenamento, como adicionar uma nova divisória, renomear uma divisória existente ou adicionar/remover atributos de uma divisória. O comando ALTER é usado para fazer essas modificações na estrutura do banco de dados.
+
+* DROP: Se por acaso você não precisar mais de uma divisória (tabela) na sua caixa de armazenamento, o comando DROP permite removê-la completamente. É como derrubar uma divisória e todas as coisas que estavam dentro dela desapareceriam junto.
+
 ## Atividade do Dia
 
 Vamos manipular um banco de dados comum entre todos e aplicar o CRUD nele.
