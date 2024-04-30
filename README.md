@@ -88,9 +88,9 @@ Por favor, faça o clone desse repositório no seu computador e aproveite a ferr
 
 a) Faça um clone do repositório [https://github.com/ondras/wwwsqldesigner](https://github.com/ondras/wwwsqldesigner) abrindo o seu terminal CMD na pasta que você deseja e digite ```git clone https://github.com/ondras/wwwsqldesigner```
 
-b) Quando terminar, entre na pasta **wwwsqldesinger** que terá sido criada dentro da pasta em que você estava no item 5.1.
+b) Quando terminar o clone, entre na pasta **wwwsqldesigner** que terá sido criada. Exemplo: c:\suapasta\wwwsqldesigner
 
-c) Digite ```npm install http-server -g``` que o npm vai fazer a instalação dos pacotes necessários para rodar no seu computador.
+c) Digite ```npm install http-server -g``` dentro da pasta **wwwsqldesigner** que o npm vai fazer a instalação dos pacotes necessários para rodar no seu computador.
 
 d) Execute o comando ```http-server``` quando aparecer o IP local **http:127.0.0.1:8080** segura o Ctrl e clique nesse link que o seu navegador preferido irá abrir e executará o SQL Designer.
 
@@ -123,7 +123,17 @@ d) Para apagar um **field**, clique nele e pressione **delete** no seu notebook.
 
 e) A maioria das variáveis é do tipo **Varchar** com **size 100**.
 
-f) Para criar um **foreign key**, busque por ela no menu vertical à direita, e clique na tabela desejada que você vai criar um foreign key.
+f) Para criar um **foreign key**, clique sobre o **primary key** (atributo **id**) da tabela 1 desejada, depois clique em **Create foreign key** no menu vertical direito, e clique na tabela 2 desejada onde estará associada a primarey key. Veja uma imagem a seguir de como ficaria se você conectar duas tabelas (users e addresses).
+
+* Na tabela users, o cpf é a chave primária.
+* Na tabela address, o cpf é a chave estrangeira.
+
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m02-semana03a/blob/main/imgs/sqldesigner_pk_fk.png">
+   <img alt="Desespero" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m02-semana03a/blob/main/imgs/sqldesigner_pk_fk.png)">
+</picture>
+
 
 g) Se você clicar em **SAVE** da sua tabela, verá que tem como exportar os comandos SQL. Basta selecionar o PostgreSQL e clicar no botão vermelho **Generate MySQL**.
 
