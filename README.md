@@ -146,11 +146,11 @@ b) **1:N (Um para Muitos):**
   * **Exemplos:**
      * **Pedidos:** Um cliente pode ter vários pedidos.
      * **Itens do Pedido:** Um pedido pode ter vários itens.
-  * **Como modelar?** Adicione um primary key na primeira tabela e várias foreign key nas demais tabelas.
+  * **Como modelar?** Adicione um primary key na primeira tabela e várias foreign key nas demais tabelas N.
      
 c) **N:1 (Muitos para Um):**
 
-* Primary Key fica na segunda tabela com cardinalidade 1, foreign key fica na primeira tabela, com cardinalidade N.
+* Primary Key fica na segunda tabela com cardinalidade 1, foreign key fica na primeira tabela com cardinalidade N.
 * **Exemplos:**
     * **Categoria:** Muitos produtos pertencem a uma única categoria.
     * **Endereço:** Vários endereços pertencem a um único cliente.
@@ -167,18 +167,23 @@ d) **N:N (Muitos para Muitos):**
 * **Como modelar?** Numa terceira tabela, adicione uma foreign key da primeira e da segunda tabela.
 
 
+**Chave estrangeira sempre fica na tabela N**
+
+
 ## Passo 3 - Sua vez! Crie um Banco de Dados
 
 a) Modele um banco de dados
 
-* 1:1 --> tabela 1 e tabela 2
-* N:N --> tabela 1 relaciona com tabela 3, mas você vai precisar criar a tabela 4, porque tabela 1 (N) e tabela 3 (N) só se relacionam através de uma tabela de transição, lembra?  
+Sua missão é criar uma parte do cenário do seu projeto com 4 tabelas:
+
+* 2 tabelas tipo 1:1 --> que serão as tabela 1 e tabela 2, respectivamente.
+* 2 tabelas tipo N:N --> aproveite a tabela 1 e faça ela relacionar com a tabela 3, mas você vai precisar criar a tabela 4, porque tabela 1 (N) e tabela 3 (N) só se relacionam através de uma tabela de transição, lembra?
 
 b) Crie uma chave primária para Tabela 1 e uma estrangeira para Tabela 2 e faça a relação entre elas;
 
 c) Na tabela 4, crie uma chave estrangeira para Tabela 1 e Tabela 3 e faça as conexões.
 
-d) Implemente esse novo modelo de banco de dados DBeaver. Você pode usar o host (Render) do professor.
+d) Implemente esse novo modelo de banco de dados DBeaver. Use o host (Render) do professor.
 
 e) Só tenha cuidado para os nomes das entidades para não coincidir com o colega, pois caso contrário, vai dar B.O. no ```CREATE TABLE```.
 
@@ -226,19 +231,8 @@ k) Agora você terá o seu banco de dados no menu vertical da esquerda, no campo
 ## Passo 5: Fazendo o C (Create) do C R U D
 
        
-a) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, copie e cole o seu SQL do SQLDesigner. Um Exemplo seria isso:
+a) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, copie e cole o seu SQL do SQLDesigner. Você pode usar os exemplos dados no início dessa material.
 
-```
-create table users(
-id SERIAL primary key,
-primeiro_nome VARCHAR(50) not null,
-ultimo_nome VARCHAR(50) not null,
-email VARCHAR(100) not null,
-senha VARCHAR(100) not null,
-created_at TIMESTAMP default NOW(),
-update_at TIMESTAMP default NOW()
-);
-```
 
 b) Para rodar esse script, clique num **play laranja** minúsculo que tem logo na primeira linha do **create**. O resultado será uma tabela criada na parte de baixo da sua tela. **Caso apareça algum erro, o que será que você terá que mudar no código da etapa 3.1? Pense e fale para o professor ou para os seus colegas!!!**
 
