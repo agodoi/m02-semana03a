@@ -125,8 +125,8 @@ e) A maioria das variáveis é do tipo **Varchar** com **size 100**.
 
 f) Para criar um **foreign key**, clique sobre o **primary key** (atributo **id**) da tabela 1 desejada, depois clique em **Create foreign key** no menu vertical direito, e clique na tabela 2 desejada onde estará associada a primarey key. Veja uma imagem a seguir de como ficaria se você conectar duas tabelas (users e addresses).
 
-* Na tabela users, o cpf é a chave primária.
-* Na tabela address, o cpf é a chave estrangeira.
+* Na tabela users, o cpf é a chave primária, então aparece simplesmente **cpf**
+* Na tabela address, o cpf é a chave estrangeira, então aparece **cpf_users**, mas isso pode ser editado
 
 
 <picture>
