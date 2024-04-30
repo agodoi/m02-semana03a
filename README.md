@@ -29,13 +29,9 @@ Será o banco de dados do professor.
 
 
 <picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m02-semana02/blob/main/imgs/modelagens.png">
-   <img alt="Tipo de Modelagens" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m02-semana02/blob/main/imgs/modelagens.png)">
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m02-semana03a/blob/main/imgs/desespero.jpg">
+   <img alt="Desespero" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m02-semana03a/blob/main/imgs/desespero.jpg)">
 </picture>
-
-imagem do desespero
-
-
 
 
 ## Passo 1 - Instalando uma ferramenta de modelagem de banco de dados
@@ -54,7 +50,12 @@ c) Digite ```npm install http-server -g``` que o npm vai fazer a instalação do
 
 d) Execute o comando ```http-server``` quando aparecer o IP local **http:127.0.0.1:8080** segura o Ctrl e clique nesse link que o seu navegador preferido irá abrir e executará o SQL Designer.
 
-colocar uma imagem do SQL Designer
+
+
+
+
+
+
 
 d) Ao abrir o SQL Designer, já clica em **options** no menu direito vertical e mude de **mysql** para **postgresql** e mude a língua de **en** para **pt_BR** para deixar tudo em português brasileiro. O restante dos campos pode deixar como está o original.
 
