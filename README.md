@@ -117,7 +117,7 @@ g) Para criar um **foreign key**, busque por ela no menu vertical à direita, e 
 
 i) Se você clicar em **SAVE** da sua tabela, verá que tem como exportar os comandos SQL. Basta selecionar o PostgreSQL e clicar no botão vermelho **Generate MySQL**.
 
-## Passo 3 - Sua vez!n Crie um Banco de Dados
+## Passo 3 - Sua vez! Crie um Banco de Dados
 
 a) Modele um banco de dados
 
