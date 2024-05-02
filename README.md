@@ -103,7 +103,7 @@ d) Execute o comando ```http-server``` quando aparecer o IP local **http:127.0.0
 **se deu tudo errado, use esse link [https://sql.toad.cz/](https://sql.toad.cz/)**
 
 
-d) Ao abrir o SQL Designer, já clica em **options** no menu direito vertical e mude de **mysql** para **postgresql** e mude a língua de **en** para **pt_BR** para deixar tudo em português brasileiro. O restante dos campos pode deixar como está o original.
+d) Ao abrir o SQL Designer, já clica em **options** no menu direito vertical e mude de **mysql** para **postgresql** e mude a língua de **en** para **pt_BR** para deixar tudo em português brasileiro. O restante dos campos pode deixar como está o original. Para exportar o código-fonte para **PostgreSQL**, atualize o link do navegador após confirmar a configuração para PostgreSQL.
 
 ## Passo 2 - Modelando um Banco de Dados
 
