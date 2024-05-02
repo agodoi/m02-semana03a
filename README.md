@@ -135,7 +135,7 @@ f) Para criar um **foreign key**, clique sobre o **primary key** (atributo **id*
 </picture>
 
 
-g) Se você clicar em **SAVE** da sua tabela, verá que tem como exportar os comandos SQL, mas cuidado, ele exporta como MySQL.
+g) Se você clicar em **SAVE** da sua tabela, verá que tem como exportar os comandos SQL, mas cuidado, ele exporta como MySQL. Para mudar para **PostgreSQL**, atualize o link após confirmar a configuração para PostgreSQL.
 
 
 ### Conceito
